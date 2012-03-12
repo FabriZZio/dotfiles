@@ -32,3 +32,6 @@ alias jizz='pbpaste | gist -pt php'
 
 # deploy blimp
 alias blimp.deploy='ssh bauffman "cd www.blimp.be/ && git checkout production && git pull origin production && history -c" && echo "All done"'
+
+# reinstall dotfiles
+alias dotfiles.reinstall='cd ~/.dotfiles && ./uninstall.sh && ./install.sh && cd ~'
