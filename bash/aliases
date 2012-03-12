@@ -1,0 +1,34 @@
+# code sniffing
+alias sniff='phpcs -v --standard=/Users/bauffman/Sites/fork/tools/codesniffer/Fork --ignore=.git,tmp --extensions=php'
+alias forksniff='phpcs -v --standard=/Users/bauffman/Sites/fork/tools/codesniffer/Fork --ignore=backend/core/js/tiny_mce,frontend/cache,backend/cache,install/cache,docs,markup,tools,library/external,library/spoon --extensions=php --report=full'
+alias scanner='php -f /Users/bauffman/Sites/fork/scanner.php'
+
+# deployment
+alias deploy='cap deploy && cap deploy:cleanup'
+
+# general aliases
+alias lsa='ls -agG'
+alias ..='cd ..'
+alias vi='vim'
+
+# phpunit
+alias phpunit='clear && phpunit --colors'
+
+# ctags
+alias tag='ctags -h ".php" -R .'
+
+# git
+alias g='git'
+alias gs='git status'
+alias gd='git diff'
+alias gc='git diff --cached'
+alias pom='git push origin master'
+alias gprom='git pull --rebase origin master'
+alias gdiff='git diff --name-only'
+complete -o default -o nospace -F _git g
+
+# gist
+alias jizz='pbpaste | gist -pt php'
+
+# deploy blimp
+alias blimp.deploy='ssh bauffman "cd www.blimp.be/ && git checkout production && git pull origin production && history -c" && echo "All done"'

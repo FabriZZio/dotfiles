@@ -1,0 +1,15 @@
+[user]
+	name = Bauffman
+	email = davy@bauffman.com
+
+[color]
+	ui = auto
+
+[alias]
+	last = log --full-diff -1 --graph --summary HEAD
+	pom = push origin master
+
+[core]
+	whitespace = trailing-space,space-before-tab,indent-with-non-tab
+	editor = vim
+	excludesfiles = ~/.gitignore_global
