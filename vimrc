@@ -126,6 +126,8 @@ endfunction
 " -----------------------------------------------------------------------------
 " Used everywhere, independent of file type.
 
+ab dmp Spoon::dump();<Left><Left>
+ab author Davy Hellemans <davy@bauffman.be>
 ab ... …
 ab <3 ♥
 	" Note: <3 is jarring when using XML/HTML, because the cursor does not
