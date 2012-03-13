@@ -39,7 +39,7 @@ set undolevels=1024
 autocmd BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g`\"" | endif
 
 " Syntax highlighting
-color manxome
+color twilight256
 syntax on
 syntax sync fromstart
 set synmaxcol=16384
