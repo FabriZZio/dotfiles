@@ -10,6 +10,7 @@ alias deploy='cap deploy && cap deploy:cleanup'
 alias lsa='ls -agG'
 alias ..='cd ..'
 alias vi='vim'
+alias mattach='open -a Mail'
 
 # phpunit
 alias phpunit='clear && phpunit --colors'
