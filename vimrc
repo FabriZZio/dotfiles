@@ -188,6 +188,9 @@ set grepprg=ack
 map <F6> :set number!<CR>
 set numberwidth=5
 
+" Show taglist
+map <F2> :TlistToggle<CR>
+
 " Show information concerning the current position in the document.
 set ruler
 
