@@ -206,3 +206,5 @@ set ruler
 if has("gui_running")
 	set guioptions=egmrt
 endif
+
+filetype plugin indent on
