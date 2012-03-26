@@ -194,6 +194,13 @@ map <F2> :TlistToggle<CR>
 " Show information concerning the current position in the document.
 set ruler
 
+" Copy paste from system clipboard
+map <C-y> "+y
+map <C-p> "+p
+
+" Command-t for the win
+map <F5> :CommandT<CR>
+
 "syn on
 "set history=1000
 "set wildmenu
@@ -211,3 +218,8 @@ if has("gui_running")
 endif
 
 filetype plugin indent on
+
+highlight SpecialKey ctermfg=8
+
+" Configuration details for the autocompletion popup
+let g:acp_behaviorKeywordLength = 4
