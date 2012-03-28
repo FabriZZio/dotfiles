@@ -223,3 +223,6 @@ highlight SpecialKey ctermfg=8
 
 " Configuration details for the autocompletion popup
 let g:acp_behaviorKeywordLength = 4
+
+" Configuration for easier buffer switching
+map <F9> :buffers<CR>:buffer<Space>
