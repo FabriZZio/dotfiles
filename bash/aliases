@@ -1,11 +1,3 @@
-# code sniffing
-alias sniff='phpcs -v --standard=/Users/bauffman/Sites/fork/tools/codesniffer/Fork --ignore=.git,tmp --extensions=php'
-alias forksniff='phpcs -v --standard=/Users/bauffman/Sites/fork/tools/codesniffer/Fork --ignore=backend/core/js/tiny_mce,frontend/cache,backend/cache,install/cache,docs,markup,tools,library/external,library/spoon --extensions=php --report=full'
-alias scanner='php -f /Users/bauffman/Sites/fork/scanner.php'
-
-# deployment
-alias deploy='cap deploy && cap deploy:cleanup'
-
 # general aliases
 alias lsa='ls -agG'
 alias ..='cd ..'
@@ -14,9 +6,6 @@ alias mattach='open -a Mail'
 
 # phpunit
 alias phpunit='clear && phpunit --colors'
-
-# ctags
-alias tag='ctags -h ".php" -R .'
 
 # git
 alias g='git'
