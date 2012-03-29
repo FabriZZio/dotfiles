@@ -17,11 +17,12 @@ alias gprom='git pull --rebase origin master'
 alias gdiff='git diff --name-only'
 complete -o default -o nospace -F _git g
 
-# gist
-alias jizz='pbpaste | gist -pt php'
-
 # deploy blimp
 alias blimp.deploy='ssh bauffman "cd www.blimp.be/ && git checkout production && git pull origin production && history -c" && echo "All done"'
+
+# memcache
+alias memcache.start='memcached -d -m 100'
+alias memcache.stop='killall memcached'
 
 # reinstall dotfiles
 alias dotfiles.reinstall='cd ~/.dotfiles && ./uninstall.sh && ./install.sh && cd ~'
