@@ -12,5 +12,5 @@
 
 [core]
 	whitespace = trailing-space,space-before-tab,indent-with-non-tab
-	editor = vim
+	editor = nano
 	excludesfiles = ~/.gitignore_global
