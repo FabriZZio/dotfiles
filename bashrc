@@ -26,3 +26,6 @@
 #
 
 [ -n "$PS1" ] && source ~/.bash_profile;
+
+# Ruby RVM
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
