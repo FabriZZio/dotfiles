@@ -1,0 +1,3 @@
+[submodule "gti"]
+	path = gti
+	url = git@github.com:rwos/gti.git
