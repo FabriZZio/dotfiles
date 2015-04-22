@@ -3,6 +3,7 @@ alias lsa='ls -agG'
 alias ..='cd ..'
 alias vi='vim'
 alias mattach='open -a Mail'
+alias rainbow='yes "$(seq 231 -1 16)" | while read i; do printf "\x1b[48;5;${i}m\n"; sleep .02; done'
 
 # phpunit
 alias phpunit='clear && phpunit --colors'
@@ -15,6 +16,8 @@ alias gc='git diff --cached'
 alias pom='git push origin master'
 alias gprom='git pull --rebase origin master'
 alias gdiff='git diff --name-only'
+alias gitpurge-remote="git checkout master && git remote update --prune | git branch -r --merged | grep -v master | grep -v develop | sed -e 's/origin\//:/' | xargs -I {} git push origin {}"
+alias gitpurge-local="git checkout master && git branch --merged | grep -v master | grep -v develop | xargs -I {} git branch -d {}"
 complete -o default -o nospace -F _git g
 
 # deploy blimp

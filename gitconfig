@@ -21,7 +21,7 @@
 	whitespace = trailing-space,space-before-tab,indent-with-non-tab
 	editor = nano
 	excludesfile = ~/.gitignore_global
-	autocrlf = input
+#	autocrlf = input
 #	safecrlf = true
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
